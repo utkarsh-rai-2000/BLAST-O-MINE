@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BLAST-O-MINE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Mining Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- bootstarp-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!--// bootstarp-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!--// css -->
+	<script src="js/jquery-1.11.1.min.js">
+		< /script> <
+		script src = "js/modernizr.custom.js" >
+	</script>
+
+	<style>
+		.input_heading {
+			text-align: center;
+			margin: 20px;
+			font-size: 30px;
+			color: #1CD5B5;
+		}
+
+		.output_heading {
+			text-align: center;
+			font-size: 30px;
+			color: #1CD5B5;
+		}
+
+		.final_button {
+			margin-left: 700px;
+			margin-bottom: 50px;
+		}
+
+
+
+		.hole_parameter {
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 390px;
+			position: relative;
+		}
+
+		.explosive_parameter {
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 390px;
+			position: absolute;
+			left: 1000px;
+		}
+
+		.rock_parameter {
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 390px;
+			position: absolute;
+		}
+
+		.hole_and_bench_output {
+			display: inline-block;
+			margin: 50px;
+			margin-left: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 550px;
+			position: relative;
+		}
+
+		.bottom_charge {
+
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 275px;
+			position: absolute;
+		}
+
+		.column_charge {
+
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 275px;
+			top: 1755px;
+			position: absolute;
+		}
+
+		.explosive_output {
+			display: inline-block;
+			margin: 50px;
+			border-style: dotted;
+			padding: 20px;
+			height: 550px;
+			right: 50px;
+			position: absolute;
+
+		}
+
+		.section_info {
+			color: #1CD5B5;
+			text-align: center;
+		}
+
+
+		label {
+			padding: 10px;
+			width: 200px;
+		}
+
+		select {
+			width: 155px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner">
+		<div class="banner-content">
+			<div class="logo">
+				<a href="index.html">BLAST-O-MINE</a>
+			</div>
+			<div class="top-nav">
+				<span class="menu">MENU</span>
+				<ul class="nav1 cl-effect-15">
+					<li><a href="index.html" data-hover="Home">Home</a></li>
+					<li><a href="services.html" class="active">Services</a></li>
+					<li><a href="gallery.html" data-hover="Gallery">Gallery</a></li>
+					<li><a href="contact.html" data-hover="Contact">Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+					$("span.menu").click(function() {
+						$("ul.nav1").slideToggle(300, function() {
+							// Animation complete.
+						});
+					});
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- services -->
+	<div class="services">
+
+		<div class="services-bottom">
+			<!-- container -->
+			<div class="container">
+
+				<div class="services-bottom-grids">
+					<div class=" col-md-4 services-bottom-grid">
+						<div class="services-img">
+							<img src="images/s1.png" alt="" />
+						</div>
+						<h5>Hole and bench parameters</h5>
+						<p>Calculates burden, spacing, drill hole length, subdrilling and total stemming.
+						</p>
+					</div>
+					<div class=" col-md-4 services-bottom-grid">
+						<div class="services-img">
+							<img src="images/s2.png" alt="" />
+						</div>
+						<h5>Rock parameters</h5>
+						<p>UCS of rock, rock type and density of rock is used to predict the future results.
+						</p>
+					</div>
+					<div class=" col-md-4 services-bottom-grid">
+						<div class="services-img">
+							<img src="images/s3.png" alt="" />
+						</div>
+						<h5>Explosive parameters</h5>
+						<p>Predicts powder factor, fragmentation size, explosives per hole, total explosives used and total volume of rock blasted.
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+	</div>
+	<!-- //services -->
+	<hr>
+
+
+
+	<!-- PROGRAM -->
+
+	<div class="input_form">
+		<div class="form_heading">
+			<h2 class="input_heading">Enter the following parameters</h2>
+		</div>
+		<div class="hole_parameter">
+			<label for=""> Name of the mine</label>
+			<input type="text" name="" value="" id="Name_of_Mine">
+			<br>
+			<h3 class="section_info">Hole and bench parameters</h3>
+			<label for=""> Drill Diameter(mm)</label>
+			<input type="text" name="" value="" id="Drill_hole_diameter">
+			<br>
+			<label for=""> Bench Height</label>
+			<input type="text" name="" value="" id="Bench_height">
+			<br>
+			<label for=""> Drill angle(in degree)</label>
+			<input type="text" name="" value="" id="Drill_hole_angle">
+			<br>
+			<label for=""> Number of hole to be blasted</label>
+			<input type="text" name="" value="" id="No_of_hole">
+			<br>
+		</div>
+		<div class="rock_parameter">
+			<h3 class="section_info">Rock parameter</h3>
+			<label for=""> UCS of rock(MPa)</label>
+			<input type="text" name="" value="" id="UCS_of_rock">
+			<br>
+			<label for=""> Rock Type</label>
+			<select name="rock" id="rock">
+				<option value="MEDIUM_ROCK">MEDIUM ROCK</option>
+				<option value="HARD_HIGH_FISSURED">HARD HIGH FISSURED</option>
+				<option value="HARD_WEAK_FISSURED">HARD WEAK FISSURED</option>
+			</select>
+			<br>
+			<label for=""> Density of rock(kg/m<span>&#179;</span>)</label>
+			<input type="text" name="" value="" id="Density_of_rock">
+			<br>
+		</div>
+		<div class="explosive_parameter">
+			<h3 class="section_info">Explosive parameter</h3>
+			<label for=""> VOD of base charge(m/s)</label>
+			<input type="text" name="" value="" id="VOD_of_base">
+			<br>
+			<label for=""> VOD of column charge(m/s)</label>
+			<input type="text" name="" value="" id="VOD_of_column">
+			<br>
+			<label for=""> Density of base charge(kg/m<span>&#179;</span>)</label>
+			<input type="text" name="" value="" id="density_basecharge">
+			<br>
+			<label for=""> Density of column charge(kg/m<span>&#179;</span>)</label>
+			<input type="text" name="" value="" id="density_columncharge">
+			<br>
+			<label for=""> Explosive Type</label>
+			<select name="explosive" id="explosive">
+				<option value="ANFO">ANFO</option>
+				<option value="Emulsion">Emulsion</option>
+			</select>
+			<br>
+		</div>
+		<div class="final_button">
+			<button type="button" class="btn btn-outline-info" onclick="myFunction()">CALCULATE</button>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="Output_form">
+		<div class="form_heading">
+			<h2 class="output_heading">Results and Data</h2>
+		</div>
+		<div class="hole_and_bench_output">
+			<h3 class="section_info">Hole and bench output</h3>
+			<label for="">Burden(m)</label>
+			<input type="text" name="" value="" id="burden" disabled>
+			<br>
+			<label for="">Spacing(m)</label>
+			<input type="text" name="" value="" id="spacing" disabled>
+			<br>
+			<label for="">Drill hole lenght(m)</label>
+			<input type="text" name="" value="" id="length_drillhole" disabled>
+			<br>
+			<label for="">Total length to be drilled(m)</label>
+			<input type="text" name="" value="" id="totallength_drillhole" disabled>
+			<br>
+			<label for="">Subdrilling(m)</label>
+			<input type="text" name="" value="" id="length_subdrill" disabled>
+			<br>
+			<label for="">Total lenght of subdrilling(m)</label>
+			<input type="text" name="" value="" id="totallength_subdrill" disabled>
+			<br>
+			<label for="">Stemming(m)</label>
+			<input type="text" name="" value="" id="length_stemming" disabled>
+			<br>
+			<label for="">Total length of stemming(m)</label>
+			<input type="text" name="" value="" id="totallength_stemming" disabled>
+			<br>
+		</div>
+		<div class="bottom_charge">
+			<h3 class="section_info">Bottom charge</h3>
+			<label for="">Conc. (kg/m)</label>
+			<input type="text" name="" value="" id="conc_bottom" disabled>
+			<br>
+			<label for="">Length(m)</label>
+			<input type="text" name="" value="" id="legth_bottom" disabled>
+			<br>
+			<label for="">Kg. per hole</label>
+			<input type="text" name="" value="" id="bottom_per_hole" disabled>
+			<br>
+			<label for="">Total bottom charge(kg)</label>
+			<input type="text" name="" value="" id="total_bottom_charge" disabled>
+			<br>
+		</div>
+		<div class="column_charge">
+			<h3 class="section_info">Column charge</h3>
+			<label for="">Conc. (kg/m)</label>
+			<input type="text" name="" value="" id="conc_column" disabled>
+			<br>
+			<label for="">Length(m)</label>
+			<input type="text" name="" value="" id="legth_column" disabled>
+			<br>
+			<label for="">Kg. per hole</label>
+			<input type="text" name="" value="" id="column_per_hole" disabled>
+			<br>
+			<label for="">Total column charge(kg)</label>
+			<input type="text" name="" value="" id="total_column_charge" disabled>
+			<br>
+		</div>
+		<div class="explosive_output">
+			<h3 class="section_info">Explosive</h3>
+			<label for="">Explosive per hole(kg)</label>
+			<input type="text" name="" value="" id="explosive_per_hole" disabled>
+			<br>
+			<label for="">Total explosive used(kg)</label>
+			<input type="text" name="" value="" id="total_explosive" disabled>
+			<br>
+			<label for="">Volume of rock blasted per hole(kg/m<span>&#179;</span>)</label>
+			<input type="text" name="" value="" id="volume_of_rock" disabled>
+			<br>
+			<label for="">Powder factor</label>
+			<input type="text" name="" value="" id="powder_factor" disabled>
+			<br>
+			<label for="">fragmentation size(cm)</label>
+			<input type="text" name="" value="" id="frag_size" disabled>
+			<br>
+		</div>
+		<br>
+		<div class="final_button">
+			<button type="button" class="btn btn-outline-info" onclick="clearAction()">CLEAR DATA</button>
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+			var D = document.getElementById("Drill_hole_diameter").value;
+			var H = document.getElementById("Bench_height").value;
+			var b1 = document.getElementById("Drill_hole_angle").value;
+			var n = document.getElementById("No_of_hole").value;
+			var UCS = document.getElementById("UCS_of_rock").value;
+			var VODB = document.getElementById("VOD_of_base").value;
+			var VODC = document.getElementById("VOD_of_column").value;
+			var dbc = document.getElementById("density_basecharge").value;
+			var dcc = document.getElementById("density_columncharge").value;
+			if (D > 450)
+				window.alert("D must be less than 450mm");
+			D = D / 1000;
+			b = (b1 * 3.14) / 180;
+			var B, S, T, J, LB, SBR;
+			if (D >= 0.065 && D <= 0.165) {
+				if (UCS >= 0 && UCS < 70) {
+					B = 39 * D;
+					S = 51 * D;
+					T = 35 * D;
+					J = 10 * D;
+					LB = 30 * D;
+					SBR = 1.25;
+				} else if (UCS >= 70 && UCS < 120) {
+					B = 37 * D;
+					S = 47 * D;
+					T = 34 * D;
+					J = 11 * D;
+					LB = 35 * D;
+					SBR = 1.2;
+				} else if (UCS >= 120 && UCS < 180) {
+					B = 35 * D;
+					S = 43 * D;
+					T = 32 * D;
+					J = 12 * D;
+					LB = 40 * D;
+					SBR = 1.15;
+				} else if (UCS >= 180) {
+					B = 33 * D;
+					S = 38 * D;
+					T = 35 * D;
+					J = 10 * D;
+					LB = 46 * D;
+					SBR = 1.25;
+				}
+			} else if (D >= 0.166 && D <= 0.450) {
+				if (document.getElementById("explosive").value == "ANFO") {
+					if (UCS >= 0 && UCS < 70) {
+						B = 28 * D;
+						S = 33 * D;
+						T = 40 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					} else if (UCS >= 70 && UCS < 180) {
+						B = 23 * D;
+						S = 27 * D;
+						T = 32 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					} else if (UCS >= 180) {
+						B = 21 * D;
+						S = 24 * D;
+						T = 25 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					}
+				} else if (document.getElementById("explosive").value == "Emulsion") {
+					if (UCS >= 0 && UCS < 70) {
+						B = 38 * D;
+						S = 45 * D;
+						T = 40 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					} else if (UCS >= 70 && UCS < 180) {
+						B = 32 * D;
+						S = 37 * D;
+						T = 32 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					} else if (UCS >= 180) {
+						B = 30 * D;
+						S = 34 * D;
+						T = 25 * D;
+						SBR = S / B;
+						LB = 8 * D;
+						J = 5 + ((0.450 - D) / 0.09467);
+					}
+				}
+			}
+
+			var L = (H / Math.cos(b)) + J * (1 - (b1 / 100));
+			var LC = Math.abs(L - (T + LB));
+			var concb = (3.14 * D * D * dbc * L) / (4 * L);
+			var concc = (3.14 * D * D * dcc * L) / (4 * L);
+			var te = (n * concb * LB) + (n * concc * LC);
+			var vr = (B * S * H) / Math.cos(b);
+			var pf = (te / n) / vr;
+			var x = (dcc * VODC * VODC) / 1000;
+			var PRP = 100 * Math.pow(x / 8005400, 1 / 3);
+			var Qb = te / n;
+			var Q = (Qb * PRP) / 115;
+			var A;
+			if (document.getElementById("rock").value == "MEDIUM_ROCK")
+				A = 7;
+			else if (document.getElementById("rock").value == "HARD_HIGH_FISSURED")
+				A = 10;
+			else if (document.getElementById("rock").value == "HARD_WEAK_FISSURED")
+				A = 13;
+			var k = A * Math.pow((vr / Q), 0.8) * Math.pow(Q, (1 / 6));
+
+			document.getElementById("length_drillhole").value = Number(L).toFixed(2);
+			document.getElementById("totallength_drillhole").value = Number(n * L).toFixed(2);
+			document.getElementById("length_subdrill").value = Number(J).toFixed(2);
+			document.getElementById("totallength_subdrill").value = Number(n * J).toFixed(2);
+			document.getElementById("length_stemming").value = Number(T).toFixed(2);
+			document.getElementById("totallength_stemming").value = Number(n * T).toFixed(2);
+			document.getElementById("burden").value = Number(B).toFixed(2);
+			document.getElementById("spacing").value = Number(S).toFixed(2);
+			document.getElementById("conc_bottom").value = Number(concb).toFixed(2);
+			document.getElementById("legth_bottom").value = Number(LB).toFixed(2);
+			document.getElementById("bottom_per_hole").value = Number(concb * LB).toFixed(2);
+			document.getElementById("total_bottom_charge").value = Number(n * concb * LB).toFixed(2);
+			document.getElementById("conc_column").value = Number(concc).toFixed(2);
+			document.getElementById("legth_column").value = Number(LC).toFixed(2);
+			document.getElementById("column_per_hole").value = Number(concc * LC).toFixed(2);
+			document.getElementById("total_column_charge").value = Number(n * concc * LC).toFixed(2);
+			document.getElementById("explosive_per_hole").value = Number(te / n).toFixed(2);
+			document.getElementById("total_explosive").value = Number(te).toFixed(2);
+			document.getElementById("volume_of_rock").value = Number(vr).toFixed(2);
+			document.getElementById("powder_factor").value = Number(pf).toFixed(2);
+			document.getElementById("frag_size").value = Number(k).toFixed(2);
+
+		}
+
+
+		function clearAction() {
+			document.getElementById("Name_of_Mine").value = ""
+			document.getElementById("Drill_hole_diameter").value = ""
+			document.getElementById("Bench_height").value = ""
+			document.getElementById("Drill_hole_angle").value = ""
+			document.getElementById("No_of_hole").value = ""
+			document.getElementById("UCS_of_rock").value = ""
+			document.getElementById("Density_of_rock").value = ""
+			document.getElementById("VOD_of_base").value = ""
+			document.getElementById("VOD_of_column").value = ""
+			document.getElementById("density_basecharge").value = ""
+			document.getElementById("density_columncharge").value = ""
+			document.getElementById("burden").value = ""
+			document.getElementById("spacing").value = ""
+			document.getElementById("length_drillhole").value = ""
+			document.getElementById("totallength_drillhole").value = ""
+			document.getElementById("length_subdrill").value = ""
+			document.getElementById("totallength_subdrill").value = ""
+			document.getElementById("length_stemming").value = ""
+			document.getElementById("totallength_stemming").value = ""
+			document.getElementById("conc_bottom").value = ""
+			document.getElementById("legth_bottom").value = ""
+			document.getElementById("bottom_per_hole").value = ""
+			document.getElementById("total_bottom_charge").value = ""
+			document.getElementById("conc_column").value = ""
+			document.getElementById("legth_column").value = ""
+			document.getElementById("column_per_hole").value = ""
+			document.getElementById("total_column_charge").value = ""
+			document.getElementById("explosive_per_hole").value = ""
+			document.getElementById("total_explosive").value = ""
+			document.getElementById("volume_of_rock").value = ""
+			document.getElementById("powder_factor").value = ""
+			document.getElementById("frag_size").value = ""
+		}
+	</script>
+
+
+
+
+	<!-- PROGRAM -->
+
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-info">
+				<h3>Contact</h3>
+				<p class="f-address">Indian Institute of technology(IIT) BHU, Varanasi</p>
+				<ul>
+					<li><a href="https://github.com/utkarsh-rai-2000" class="facebook"> </a>
+					<li><a href="https://www.facebook.com/profile.php?id=100004770845086" class="facebook twitter"> </a>
+					<li><a href="https://utkarsh-rai-2000.github.io/my_website/" class="facebook chrome"> </a>
+
+				</ul>
+				<p class="copyright"> © 2020 Mining. All rights reserved | Design by Utkarsh rai</p>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+</body>
+
+</html>
